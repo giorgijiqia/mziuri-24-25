@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile - Registration</title>
+</head>
+<body>
+
+    <h1>User Registration</h1>
+
+    <form action="#" method="POST">
+        <div>
+            <label for="first_name">Name:</label>
+            <input type="text" id="first_name" name="first_name" required placeholder="Enter your name">
+        </div>
+        <br>
+
+        <div>
+            <label for="last_name">Last name:</label>
+            <input type="text" id="last_name" name="last_name" required placeholder="Enter your last name">
+        </div>
+        <br>
+
+        <div>
+            <label for="gender">Choose gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <br>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        <br>
+
+        <div>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirm your password">
+        </div>
+        <br>
+
+        <div>
+            <label for="terms">Agree to terms and conditions:</label>
+            <input type="checkbox" id="terms" name="terms" required>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+    <h2>Login Page</h2>
+
+    <form action="#" method="POST">
+        <div>
+            <label for="login_email">Email:</label>
+            <input type="email" id="login_email" name="login_email" required placeholder="Enter your email">
+        </div>
+        <br>
+
+        <div>
+            <label for="login_password">Password:</label>
+            <input type="password" id="login_password" name="login_password" required placeholder="Enter your password">
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Login">
+        </div>
+    </form>
+
+</body>
+</html>

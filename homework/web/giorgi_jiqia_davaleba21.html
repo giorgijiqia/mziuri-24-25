@@ -2,24 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My top 3 animes of all time </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Top 3 Animes of All Time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .anime-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .anime-item {
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .anime-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .anime-item p {
+            font-size: 16px;
+        }
+
+        .anime-item h5 {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .anime-item a {
+            text-decoration: none;
+            color: #2a9d8f;
+        }
+
+        .anime-item a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
-  <h2>The Best Animes According to giorgi</h2>
-  <h3>My top 3 anime of all-time</h3>
-  <hr>
+    <h2>The Best Animes According to Giorgi</h2>
+    <h3>My Top 3 Anime of All Time</h3>
+    <hr>
 
-   <img src="img/hxh.jpg" alt="Image" width="160" height="100">
-   <p><a href="https://yandex.ru/search/?text=Hunter+X+Hunter&clid=2411726&lr=10277" target="_blank">Hunter X hunter</a></p>
-   <h5>Seen it 2 times.Will see it again</h5>
+    <div class="anime-list">
+        <div class="anime-item">
+            <img src="img/hxh.jpg" alt="Hunter X Hunter">
+            <p><a href="https://yandex.ru/search/?text=Hunter+X+Hunter&clid=2411726&lr=10277" target="_blank">Hunter X Hunter</a></p>
+            <h5>Seen it 2 times. Will see it again</h5>
+        </div>
 
-   <img src="img/bleach.webp" alt="Bleach Image" width="160" height="100">
-   <p><a href="https://yandex.ru/search/?text=bleach&lr=10277&clid=2411726" target="_blank">BLEACH</a></p>
-   <h5>im currently watching it and I really like it</h5>
+        <div class="anime-item">
+            <img src="img/bleach.webp" alt="Bleach">
+            <p><a href="https://yandex.ru/search/?text=bleach&lr=10277&clid=2411726" target="_blank">BLEACH</a></p>
+            <h5>I'm currently watching it and I really like it</h5>
+        </div>
 
-   <img src="img/one_piece.jpg" alt="One Piece Anime Poster" width="160" height="100">
-   <p><a href="https://yandex.ru/search/?text=one+piece&lr=10277&clid=2411726" target="_blank">One Piece</a></p>
-   <h5>It's my childhood, I enjoyed watching it, and I recommend you watch it too</h5>
-
+        <div class="anime-item">
+            <img src="img/one_piece.jpg" alt="One Piece">
+            <p><a href="https://yandex.ru/search/?text=one+piece&lr=10277&clid=2411726" target="_blank">One Piece</a></p>
+            <h5>It's my childhood, I enjoyed watching it, and I recommend you watch it too</h5>
+        </div>
+    </div>
 </body>
 </html>

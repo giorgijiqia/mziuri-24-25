@@ -1,0 +1,229 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.8rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8c200 !important;
+}
+
+#hero {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+#hero::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+#hero .btn {
+    font-size: 1.2rem;
+    background-color: #f8c200;
+    padding: 12px 25px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#hero .btn:hover {
+    background-color: #e0a800;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    #hero h1 {
+        font-size: 5rem;
+    }
+
+    #hero p {
+        font-size: 2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        padding: 12px 18px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+/* Card Layout */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 12px 12px 0 0;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 12px 12px;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Login and Register Section */
+.login-section, .register-section {
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+button {
+    background-color: #f8c200;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e0a800;
+}
+
+#about {
+    background-color: #f4f4f9;
+    padding: 50px 20px;
+}
+
+#about h2 {
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+#about img {
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 300px;
+}
+
+/* For better focus on mobile inputs */
+input:focus, button:focus {
+    outline: 3px solid #f8c200;
+}

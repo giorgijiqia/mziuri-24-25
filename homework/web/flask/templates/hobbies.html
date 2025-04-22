@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}My Hobbies{% endblock %}
+
+{% block content %}
+    <h1>My Hobbies</h1>
+
+    {% if hobbies %}
+        <ul>
+            {% for hobby in hobbies %}
+                <li><strong>{{ hobby.name }}</strong>: {{ hobby.description }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hobbies found.</p>
+    {% endif %}
+{% endblock %}
